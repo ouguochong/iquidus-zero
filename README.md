@@ -1,26 +1,22 @@
-Iquidus Explorer - 1.6.1
+ZER Explorer 1.0.2 (Based on Iquidus Explorer - 1.6.1, and BitcoinZ Explorer - 1.0.2)
 ================
 
 An open source block explorer written in node.js.
 
 ### See it in action
 
-*  [Deutsche eMark](http://b.emark.tk/)
-*  [Sphere](http://sphere.iquidus.io)
-*  [Vertcoin](http://explorer.vertcoin.info/)
-*  [Vivo](http://vivo.explorerz.top:3003)
-*  [Florincoin](https://florincoin.info/info)
-*  [Maxcoin Explorer 1](https://explorer.maxcoinproject.net/)
-*  [Maxcoin Explorer 2](https://explorer2.maxcoinproject.net/)
-
+*  [ZERO](https://zer.cryptonode.cloud)
 
 *note: If you would like your instance mentioned here contact me*
+
+### New Features in Zero Explorer
+*  Added Zero Skin
 
 ### Requires
 
 *  node.js >= 0.10.28
 *  mongodb 2.6.x
-*  *coind
+*  *zcashd (bitcoinzd)
 
 ### Create database
 
@@ -34,19 +30,19 @@ Create databse:
 
 Create user with read/write access:
 
-    > db.createUser( { user: "iquidus", pwd: "3xp!0reR", roles: [ "readWrite" ] } )
+    > db.createUser( { user: "zero", pwd: "makeapassword", roles: [ "readWrite" ] } )
 
 *note: If you're using mongo shell 2.4.x, use the following to create your user:
 
-    > db.addUser( { user: "username", pwd: "password", roles: [ "readWrite"] })
+    > db.addUser( { user: "zero", pwd: "password", roles: [ "readWrite"] })
 
 ### Get the source
 
-    git clone https://github.com/iquidus/explorer explorer
+    git clone https://github.com/zerocurrencycoin/iquidus-zero.git
 
 ### Install node modules
 
-    cd explorer && npm install --production
+    cd iquidus-zero && npm install --production
 
 ### Configure
 
@@ -96,10 +92,11 @@ sync.js (located in scripts/) is used for updating the local databases. This scr
 
 *Example crontab; update index every minute and market data every 2 minutes*
 
-    */1 * * * * cd /path/to/explorer && /usr/bin/nodejs scripts/sync.js index update > /dev/null 2>&1
-    */2 * * * * cd /path/to/explorer && /usr/bin/nodejs scripts/sync.js market > /dev/null 2>&1
-    */5 * * * * cd /path/to/explorer && /usr/bin/nodejs scripts/peers.js > /dev/null 2>&1
-
+    */1 * * * * cd /home/username/iquidus-zero && /usr/bin/nodejs scripts/sync.js index update > /dev/null 2>&1
+    */2 * * * * cd /home/username/iquidus-zero && /usr/bin/nodejs scripts/sync.js market > /dev/null 2>&1
+    */5 * * * * cd /home/username/iquidus-zero && /usr/bin/nodejs scripts/peers.js > /dev/null 2>&1
+    */5 * * * * cd /home/username/iquidus-zero && /usr/bin/nodejs scripts/mapgetdata.js > /dev/null 2>&1
+    
 ### Wallet
 
 Iquidus Explorer is intended to be generic so it can be used with any wallet following the usual standards. The wallet must be running with atleast the following flags
@@ -108,8 +105,8 @@ Iquidus Explorer is intended to be generic so it can be used with any wallet fol
 
 ### Donate
 
-    BTC: 168hdKA3fkccPtkxnX8hBrsxNubvk4udJi
-    JBS: JZp9893FMmrm1681bDuJBU7c6w11kyEY7D
+    https://zerocurrency.io
+
 
 ### Known Issues
 
@@ -141,6 +138,9 @@ Where [SIZE] is an integer higher than the default.
 
 Copyright (c) 2015, Iquidus Technology  
 Copyright (c) 2015, Luke Williams  
+Copyright (c) 2017-2018, BitcoinZ Community
+Copyright (c) 2018, ZeroCurrency
+
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
@@ -167,3 +167,4 @@ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
 CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
