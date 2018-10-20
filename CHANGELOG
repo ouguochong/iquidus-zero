@@ -1,3 +1,6 @@
+Zero Explorer - 1.0.2
+* initial public release
+
 1.6.1
 * fixed last_txs setting
 * added hashrate_units setting
