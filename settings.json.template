@@ -79,14 +79,14 @@
   },
 
   "poolslist": {
-        "pool1": {"name": "EasyMine.rocks - 0% (Zero Team Official)", "poolurl": "https://zero.easymine.rocks/"},
-	"pool2": {"name": "Suprnova.cc - 0% (Supports Zero)", "poolurl": "https://zero.suprnova.cc/"},
-	"pool3": {"name": "CryptoCommunity - 0.25% (Supports Zero)", "poolurl": "https://cryptocommunity.network/"},
-	"pool4": {"name": "Forgetop.com - 1% (Supports Zero)", "poolurl": "https://zero.forgetop.com"},
-	"pool5": {"name": "Minermore - 1% (Supports Zero)", "poolurl": "https://minermore.com/pool/ZER/"},
-	"pool6": {"name": "equipool - 1% (Supports Zero)", "poolurl": "https://equipool.1ds.us/"},
-	"pool7": {"name": "FomoMiners - 1% (Supports Zero)", "poolurl": "https://fomominers.com/"},
-	"pool8": {"name": "Zero-Currency - 1% (Supports Zero)", "poolurl": "https://pool.zero-currency.com/"},
+        "pool1": {"name": "zerocurrency.io", "poolurl": "https://pool.zerocurrency.io/"},
+	"pool2": {"name": "Suprnova.cc, "poolurl": "https://zero.suprnova.cc/"},
+	"pool3": {"name": "Forgetop.com", "poolurl": "https://zero.forgetop.com"},
+	"pool4": {"name": "equipool.1ds.us", "poolurl": "https://equipool.1ds.us/"}
+	"pool5": {"name": "zero-currency.com", "poolurl": "https://pool.zero-currency.com/"},
+	"pool6": {"name": "zeropool.io", "poolurl": "http://zeropool.io/"},
+	"pool7": {"name": "zergpool.com", "poolurl": "https://zergpool.com/"},
+	"pool8": {"name": "bitpool.ro", "poolurl": "https://bitpool.ro/"},
 
 //	"pool##": {"name": "pool_name", "poolurl": "pool_url"} Copy and paste to above for adding pool
 
@@ -147,8 +147,8 @@
   "difflink": "https://www.crypto-coinz.net/crypto-currency-statistics/",
 
   //genesis
-  "genesis_tx": "b8b759fed54a322cafa2f9f1484a86c4b68db08b9073c60e42de522c629f0b7b",
-  "genesis_block": "083470bd2fa0aa44f0eafb67731a7ab9b81a64e9691b53741430c1bec9805b33",
+  "genesis_tx": "094ef7f8882f3ec07edf16aa707c9511562b0e6211a8ed9db36332134bfe5357",
+  "genesis_block": "068cbb5db6bc11be5b93479ea4df41fa7e012e92ca8603c315f9b1a2202205c6",
 
   //heavy (enable/disable additional heavy features)
   "heavy": false,
@@ -184,5 +184,15 @@
   "labels": {
   //  "JSoEdU717hvz8KQVq2HfcqV9A79Wihzusu": {"label": "Developers address", "type":"primary", "url":"http://example.com"},
   //  "JSWVXHWeYNknPdG9uDrcBoZHztKMFCsndw": {"label": "Cryptsy"}
+  "t3hmg6WApjqVFw9oPWTDy4JLEqXcUWthg5v": {"label": "Dev Fund Address 1"},
+  "t3hrh5M7eaGA5zXCitPXz2pbe146GkVPWHs": {"label": "Dev Fund Address 2"},
+  "t3aWmHqBGS7watoKQLa7uykeTaYHoYqM361": {"label": "Dev Fund Address 3"},
+  "t3hsi89hPsZzmnbs3pny6cfAxMxV5TJLErj": {"label": "Dev Fund Address 4"},
+  "t3TdGxPVUdMXd6qDrDCEuJETLadZ9Ki3s9r": {"label": "Dev Fund Address 5"},
+  "t3cb5ZjKmbGbqDaYk97Auam9kXXikGQBmyY": {"label": "Dev Fund Address 6"},
+  "t3V1YovGUPW9WSBoAHS48FDdUfUTo6LDpZR": {"label": "Dev Fund Address 7"},
+  "t3KB9n28MVg31oo856t1tQGfJuYq8usTvSi": {"label": "Dev Fund Address 8"},
+  "t3dqSV4YGj5V3WjQhqFGrKTMUf9Tgc6xnJM": {"label": "Dev Fund Address 9"},
+  "t3aJkYT1i6tyytq8J6khPaDNtgZsBSXgfBf": {"label": "Dev Fund Address 10"},
   }
 }
