@@ -92,11 +92,13 @@ sync.js (located in scripts/) is used for updating the local databases. This scr
 
 *Example crontab; update index every minute and market data every 2 minutes*
 
-    */1 * * * * cd /home/username/iquidus-zero && /usr/bin/nodejs scripts/sync.js index update > /dev/null 2>&1
-    */2 * * * * cd /home/username/iquidus-zero && /usr/bin/nodejs scripts/sync.js market > /dev/null 2>&1
-    */5 * * * * cd /home/username/iquidus-zero && /usr/bin/nodejs scripts/peers.js > /dev/null 2>&1
-    */5 * * * * cd /home/username/iquidus-zero && /usr/bin/nodejs scripts/mapgetdata.js > /dev/null 2>&1
+    */1 * * * * cd /home/username/iquidus-zero && node scripts/sync.js index update > /dev/null 2>&1
+    */2 * * * * cd /home/username/iquidus-zero && node scripts/sync.js market > /dev/null 2>&1
+    */5 * * * * cd /home/username/iquidus-zero && node scripts/peers.js > /dev/null 2>&1
+    */5 * * * * cd /home/username/iquidus-zero && node scripts/mapgetdata.js > /dev/null 2>&1
     
+    && /usr/bin/nodejs scripts/sync.js may be used instead of && node scripts/sync.js .... in the above example
+
 ### Wallet
 
 Iquidus Explorer is intended to be generic so it can be used with any wallet following the usual standards. The wallet must be running with atleast the following flags
