@@ -7,7 +7,7 @@
   // name your instance!
   "title": "Zero Explorer",
 
-  "address": "zer.cryptonode.cloud",
+  "address": "iquidus1.zerocurrency.io",
 
   // coin name
   "coin": "Zero",
@@ -80,9 +80,9 @@
 
   "poolslist": {
         "pool1": {"name": "zerocurrency.io", "poolurl": "https://pool.zerocurrency.io/"},
-	"pool2": {"name": "Suprnova.cc, "poolurl": "https://zero.suprnova.cc/"},
+	"pool2": {"name": "Suprnova.cc", "poolurl": "https://zero.suprnova.cc/"},
 	"pool3": {"name": "Forgetop.com", "poolurl": "https://zero.forgetop.com"},
-	"pool4": {"name": "equipool.1ds.us", "poolurl": "https://equipool.1ds.us/"}
+	"pool4": {"name": "equipool.1ds.us", "poolurl": "https://equipool.1ds.us/"},
 	"pool5": {"name": "zero-currency.com", "poolurl": "https://pool.zero-currency.com/"},
 	"pool6": {"name": "zeropool.io", "poolurl": "http://zeropool.io/"},
 	"pool7": {"name": "zergpool.com", "poolurl": "https://zergpool.com/"},
@@ -108,7 +108,7 @@
   },
 
   // market settings
-  //supported markets: bittrex, poloniex, yobit, empoex, bleutrade, cryptopia, ccex
+  //supported markets: bittrex, poloniex, yobit, empoex, bleutrade, cryptopia, ccex, crex24
   //default market is loaded by default and determines last price in header
   "markets": {
    "coin": "ZER",
