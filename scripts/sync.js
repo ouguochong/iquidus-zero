@@ -105,6 +105,9 @@ function is_locked(cb) {
   } 
 }
 
+// when an exception occures call the exit function to unlink the lock file
+process.on('uncaughtException', exit);
+
 function exit() {
   remove_lock(function(){
     mongoose.disconnect();
